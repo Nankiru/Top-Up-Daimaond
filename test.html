@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Top Up Daimond" />
+    <meta name="author" content="Khem Sopheanan" />
+    <meta name="description" content="purchasing in-game currency (diamonds) to unlock heroes, skins, and other premium content." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Daimond</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="assets/images/DaimondLogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body class="bg-gray-100 flex justify-center items-center min-h-screen m-[10px]">
+    <div class="w-full max-w-4xl">
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="https://i.ytimg.com/vi/XmTDvtCklZI/maxresdefault.jpg" alt="Slide 1" class="w-full h-auto bg-cover bg-contain rounded-lg"></div>
+                <div class="swiper-slide"><img src="https://i.ytimg.com/vi/m05GWnCqYgA/maxresdefault.jpg" alt="Slide 2" class="w-full h-auto rounded-lg"></div>
+                <div class="swiper-slide"><img src="https://i.ytimg.com/vi/Ah1EzIDj6Tk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCt0FsVdl5sYVWqiYZr7Ch2T_4fDw" alt="Slide 3" class="w-full h-auto rounded-lg"></div>
+            </div>
+            <!-- Navigation Buttons -->
+            <div class="swiper-button-next text-white-600 text-bold"></div>
+            <div class="swiper-button-prev text-white-600 text-bold"></div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 5000, // Change slide every 3 seconds
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+</html>

@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daimond's</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
 </head>
 <body class="bg-gray-600 p-[20px]">
     <nav
-    class="bg-white/30 backdrop-blur-sm bg-blur-sm border-gray-200 rounded-[20px] sticky top-[20px] z-20 px-4 py-4 flex justify-between items-center">
+    class="bg-white/30 backdrop-blur-sm bg-blur-sm border-gray-200 rounded-[20px] sticky top-[20px] z-20 px-4 py-2 flex justify-between items-center">
     <a class="text-3xl font-bold leading-none" href="#">
-<img src="assets/images/DaimondLogo.png" class="h-14" alt="">
+<img src="assets/images/DaimondLogo.png" class="h-10" alt="">
     </a>
     <h1 id="typewriter" class=" lg:ml-2 text-transparent bg-clip-text bg-gradient-to-r to-pink-600 from-violet-400 font-serif">
     </h1>
@@ -114,7 +116,42 @@
       </div>
     </nav>
   </div>
-
+  <main class="m-[10px] my-[20px]">
+        <section class="flex items-center justify-center">
+            <div class="w-full max-w-4xl">
+                <div class="swiper mySwiper flex items-center justify-center">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="https://i.ytimg.com/vi/XmTDvtCklZI/maxresdefault.jpg" alt="Slide 1" class="w-full h-auto rounded-[15px] shadow-md"></div>
+                        <div class="swiper-slide"><img src="https://i.ytimg.com/vi/m05GWnCqYgA/maxresdefault.jpg" alt="Slide 2" class="w-full h-auto rounded-[15px] shadow-md"></div>
+                        <div class="swiper-slide"><img src="https://i.ytimg.com/vi/Ah1EzIDj6Tk/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCt0FsVdl5sYVWqiYZr7Ch2T_4fDw" alt="Slide 3" class="w-full h-auto rounded-[15px] shadow-md"></div>
+                    </div>
+                    <!-- Navigation Buttons -->
+                         <div class="swiper-button-next text-white text-bold hover:scale-x-95 transition duration-300"></div>
+                         <div class="swiper-button-prev text-white text-bold hover:scale-x-95 transition duration-300"></div>
+                    <!-- Pagination -->
+                    <div class="swiper-pagination text-red-600 bg-red-500"></div>
+                </div>
+            </div>
+        </section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        autoplay: {
+            delay: 5000, // Change slide every 3 seconds
+            disableOnInteraction: false,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        // pagination: {
+        //     el: ".swiper-pagination",
+        //     clickable: true,
+        // },
+    });
+</script>
 
   <script>
     // Burger menus
